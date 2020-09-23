@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionary</title>
+</head>
+<body>
+<script>
+    let english = ['cake', 'food', 'juice', 'rice', 'water', 'coffee', 'tea'];
+    let vietnam = ['bánh', 'thức ăn', 'nước ép', 'cơm', 'nước', 'cà phê', 'trà'];
+    let keyword = '';
+    do {
+        keyword = prompt('Mời bạn nhập vào từ tiếng anh');
+        if (english.includes(keyword)) {
+            let index = english.indexOf(keyword);
+            alert('Từ này có nghĩa là ' + vietnam[index]);
+        } else {
+            alert('Từ này không có trong từ điển, vui lòng nhập từ khác')
+        }
+    } while (!english.includes(keyword));
+</script>
+</body>
+</html>
